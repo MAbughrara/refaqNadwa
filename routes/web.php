@@ -11,6 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::get('/','GustController@index');
+//$faker = Faker\Factory::create();
+//
+//    for ($i = 0; $i < 40; $i++)
+//    {
+//        Gust::create([
+//            'name' => $faker->userName,
+//            'age' => $faker->numberBetween(18,60),
+//        ]);
+//    }
