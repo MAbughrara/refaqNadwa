@@ -13,6 +13,7 @@
 
 
 Route::get('/','GustController@index');
+Route::resource('gust','GustController');
 //$faker = Faker\Factory::create();
 //
 //    for ($i = 0; $i < 40; $i++)

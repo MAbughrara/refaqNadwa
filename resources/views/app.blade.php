@@ -9,7 +9,17 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name','') }}</title>
-
+    <style>
+        .navbar-default {
+            background-color: #008080 !important;
+       }
+        .navbar-default a{
+           color: #ffffff !important;
+       }
+        .form-control{
+            margin-bottom: 10px !important;
+        }
+    </style>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
@@ -43,7 +53,6 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                         <li>
-                            <i class="fa fa-bar-chart" aria-hidden="true"></i> ندورة
                         </li>
                     </ul>
                     <!-- Right Side Of Navbar -->
@@ -57,6 +66,7 @@
         </nav>
 <div class="container">
     @include('flash::message')
+
 </div>
         @yield('content')
     </div>

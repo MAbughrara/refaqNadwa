@@ -26,7 +26,7 @@ class GustController extends Controller
      */
     public function create()
     {
-        //
+        return view('create');
     }
 
     /**
@@ -37,8 +37,16 @@ class GustController extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
+        $this->validate($request, [
+            'name' => 'required',
+        ]);
+
+        $gust=Gust::create(['name'=>request('name'),
+           'age'=>request('age') ]
+        );
+        flash('تم إضافة الزائر بنجاح')->success();
+        return redirect('/');
+     }
 
     /**
      * Display the specified resource.

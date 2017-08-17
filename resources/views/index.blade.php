@@ -3,7 +3,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-8 col-sm-offset-2">
-				<div class="panel panel-default">
+				<a href="/gust/create"> <button class="btn btn-default ">إضافة زائر <i class="fa fa-plus-square" aria-hidden="true"></i></button> </a>
+				<hr>
+				<div class="panel panel-success">
 					<div class="panel-heading">كل الزوار</div>
 					<div class="panel-body">
 						<table class="table table-striped table-condensed">
@@ -15,10 +17,10 @@
 									<th></th>
 								</tr>
 							</thead>
-							@foreach($gusts as $gust)
+							@foreach($gusts as $no=>$gust)
 								<tr>
 									<td>
-
+										{{$no+1}}
 									</td>
 									<td>
 										{{$gust->name}}
