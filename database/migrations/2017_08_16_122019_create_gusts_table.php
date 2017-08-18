@@ -17,6 +17,8 @@ class CreateGustsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('age');
+            $table->string('phone');
+            $table->string('gender');
             $table->timestamps();
         });
     }

@@ -14,6 +14,8 @@
 									<th>رقم</th>
 									<th>الاسم</th>
 									<th>الفئة العمرية</th>
+									<th>الجنس</th>
+									<th>رقم الهاتف</th>
 									<th></th>
 								</tr>
 							</thead>
@@ -27,6 +29,12 @@
 									</td>
 									<td>
 										{{$gust->age}}
+									</td>
+									<td>
+										{{$gust->gender}}
+									</td>
+									<td>
+										{{$gust->phone}}
 									</td>
 
 								</tr>

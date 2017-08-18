@@ -37,12 +37,17 @@ class GustController extends Controller
      */
     public function store(Request $request)
     {
+
         $this->validate($request, [
             'name' => 'required',
         ]);
 
-        $gust=Gust::create(['name'=>request('name'),
-           'age'=>request('age') ]
+        $gust=Gust::create(
+            ['name'=>request('name'),
+           'age'=>request('age'),
+                'gender'=>request('gender'),
+                'phone'=>((request('pre').request('phone')))
+            ]
         );
         flash('تم إضافة الزائر بنجاح')->success();
         return redirect('/');
