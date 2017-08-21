@@ -15,8 +15,13 @@ class GustController extends Controller
     public function index()
     {
         $gusts=Gust::all();
+        $x=$gusts->where('age','15-25')->count();
+        $y=$gusts->where('age','25-45')->count();
+        $z=$gusts->where('age','45-65')->count();
 
-        return view('index',compact('gusts'));
+        $male=$gusts->where('gender','ذكر')->count();
+        $female=$gusts->where('gender','أنثى')->count();
+        return view('index',compact('gusts','x','y','z','male','female'));
     }
 
     /**
