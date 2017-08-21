@@ -75,7 +75,7 @@
                 datasets: [{
                     label: "الفئة العمرية",
                     backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f"],
-                    data: [<?php echo $y.','. $x.','. $z?>]
+                    data: [<?php echo $x.','. $y.','. $z?>]
                 }]
             },
             options: {
