@@ -2,7 +2,12 @@
 @section('content')
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-8 col-sm-offset-2">
+			<div class="col-sm-3">
+				<img src="logo.png" alt="">
+			</div>
+
+
+				<div class="col-sm-8 ">
 				<a href="/gust/create"> <button class="btn btn-default ">إضافة زائر <i class="fa fa-plus-square" aria-hidden="true"></i></button> </a>
 				<hr>
 				<div class="panel panel-success">

@@ -19,6 +19,8 @@
         .form-control{
             margin-bottom: 10px !important;
         }
+        img {
+            height: 223px;}
     </style>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -38,12 +40,6 @@
             <div class="container">
                 <div class="navbar-header">
                     <!-- Collapsed Hamburger -->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                        <span class="sr-only">القائمة</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
                         {{ config('app.name') }}

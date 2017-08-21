@@ -31,7 +31,7 @@
 								<div class="form-row">
 									<label for="age" class="col-sm-3  control-label">رقم الهاتف</label>
 									<div class="form-group col-md-6">
-										<input type="text" name="phone" class="form-control "  placeholder="رقم الهاتف">
+										<input type="text" name=	"phone" class="form-control "  placeholder="رقم الهاتف">
 									</div>
 									<div class="form-group col-md-2">
 									<select name="pre" id=""  class="form-control">
