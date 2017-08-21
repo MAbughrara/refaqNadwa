@@ -67,42 +67,5 @@
 </div>
         @yield('content')
     </div>
-    <script>
-        new Chart(document.getElementById("pie-chart"), {
-            type: 'pie',
-            data: {
-                labels: ["15-25", "25-45", "45-65"],
-                datasets: [{
-                    label: "الفئة العمرية",
-                    backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f"],
-                    data: [<?php echo $x.','. $y.','. $z?>]
-                }]
-            },
-            options: {
-                title: {
-                    display: true,
-                    text: 'احصائية حسب الفئة العمرية'
-                }
-            }
-        });
-
-        new Chart(document.getElementById("pie-chart-gender"), {
-            type: 'pie',
-            data: {
-                labels: ["ذكر", "أنثى"],
-                datasets: [{
-                    label: "حسب الجنس",
-                    backgroundColor: ["#3cba9f","#e8c3b9"],
-                    data: [<?php echo $male.','. $female ?>]
-                }]
-            },
-            options: {
-                title: {
-                    display: true,
-                    text: 'احصائية حسب الجنس'
-                }
-            }
-        });
-        </script>
 </body>
 </html>
