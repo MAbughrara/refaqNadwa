@@ -18,7 +18,6 @@
 									<th>الاسم</th>
 									<th>الفئة العمرية</th>
 									<th>الجنس</th>
-									<th>رقم الهاتف</th>
 									<th></th>
 								</tr>
 							</thead>
@@ -36,10 +35,6 @@
 									<td>
 										{{$gust->gender}}
 									</td>
-									<td>
-										{{$gust->phone}}
-									</td>
-
 								</tr>
 								<tr>
 								</tr>
